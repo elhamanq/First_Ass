@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Registration Form "
+        android:textAlignment="center"
+        android:textColor="#C6AA54"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="First Name"
+
+               ></TextView>
+
+            <EditText
+style="@style/editText"
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"></TextView>
+
+            <EditText
+                style="@style/editText"
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"></TextView>
+
+            <EditText
+                style="@style/editText"
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"></TextView>
+
+            <EditText
+                style="@style/editText"
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birth Date"></TextView>
+
+            <EditText
+                style="@style/editText"
+                android:id="@+id/birthD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"></TextView>
+
+            <RadioGroup
+                style="@style/editText"
+                android:id="@+id/radioG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    />
+                <RadioButton android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"></TextView>
+            <Spinner
+                style="@style/editText"
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rotationX="-12"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#C39D2C"
+        android:onClick="getData"
+        android:text="Save"
+        android:textColor="#FFFFFF"></Button>
+
+
+
+</LinearLayout>
