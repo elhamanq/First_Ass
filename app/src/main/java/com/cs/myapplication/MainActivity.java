@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void countrySpinner() {
 
+
         ArrayList<String> country = new ArrayList<>();
         country.add(0,"Country");
         country.add(1,"Brazil");
